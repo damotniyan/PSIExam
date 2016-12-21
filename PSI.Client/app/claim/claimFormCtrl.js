@@ -3,10 +3,10 @@
     angular
         .module("claimManagement")
         .controller("claimFormCtrl",
-                     ["$scope", "petResource", "Upload", "$timeout",
+                     ["petResource", "Upload", "$timeout",
                      claimFormCtrl]);
 
-    function claimFormCtrl($scope, petResource, Upload, $timeout) {
+    function claimFormCtrl(petResource, Upload, $timeout) {
         var vm = this;
         vm.pickedPet = '';
         vm.files = '';
@@ -16,13 +16,11 @@
             vm.pets = data;            
         });        
 
-        $scope.submit = function () {
+        vm.submit = function () {
             var fileNames = '';
-
             for (var i = 0; i < vm.files.length; i++) {
                 fileNames += '\n' + vm.files[i].name; 
             }
-
             alert('Thank you for submitting\n' + fileNames + '\n\nfor ' + vm.pickedPet);
         };
 

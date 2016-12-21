@@ -6,6 +6,6 @@
                     ["ngResource"])
     	.constant("appSettings",
         {
-            serverPath: "http://localhost:2729"
+            serverPath: "http://localhost:2779"
         });
 }());

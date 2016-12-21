@@ -41,3 +41,7 @@
 .dragover {
     border: 2px dashed blue;
 }
+.file-list {
+    font-size: .65em;
+    list-style: none;
+}

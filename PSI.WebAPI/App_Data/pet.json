@@ -1,0 +1,19 @@
+[
+  {
+    "PetId": 1,
+    "PetName": "Rover",
+    "RegistryDate": "2016-03-19T00:00:00-07:00"
+
+  },
+  {
+    "PetId": 2,
+    "PetName": "Fido",
+    "RegistryDate": "2016-03-19T00:00:00-07:00"
+  },
+  {
+    "PetId": 3,
+    "PetName": "Pixie",
+    "RegistryDate": "2016-03-19T00:00:00-07:00"
+  }
+
+]
