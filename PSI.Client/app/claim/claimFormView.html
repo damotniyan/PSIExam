@@ -1,0 +1,30 @@
+﻿<div class="abs-center is-resp"
+     ng-controller="claimFormCtrl as vm">
+    <h3 class="mar-2em">Make a claim</h3>
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <form role="form" ng-submit="submit()" id="claim-form">
+            <div class="form-group mar-2em">
+                <label for="pet-select">Make a claim for your pet</label>
+                <select class="form-control"
+                        id="pet-select"
+                        ng-model="vm.pickedPet"
+                        ng-init="vm.pickedPet = vm.pickedPet || vm.pets.petName"
+                        ng-options="opt.petName as opt.petName for opt in vm.pets"></select>
+            </div>
+            <div class="form-group mar-2em">
+                <p>Attach {{vm.pickedPet}}'s invoice for us here</p>
+
+                <div ngf-drop ngf-select ng-model="vm.files" class="drop-box"
+                     ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true"
+                     accept="image/*,application/*"
+                     ngf-pattern="'image/*,application/*'">Drag and Drop or or click to upload</div>
+                <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="submit" value="Submit" class="btn btn-primary" />
+                <!--<a>Or save for laters</a>-->
+            </div>
+        </form>
+    </div>
+</div>

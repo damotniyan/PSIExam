@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PSI Claim Form</title>
+
+    <!-- Style sheets -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="style/mainStyle.css" rel="stylesheet" />
+</head>
+<body ng-app="claimManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <img src="image/petsure-logo.png" alt="Pet Sure" class="logo-img">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div ng-include="'app/claim/claimFormView.html'"></div>
+
+    <!-- Library Scripts -->
+    <script src="scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/ng-file-upload.js"></script>
+    <script src="Scripts/ng-file-upload-shim.js"></script>
+    <!-- Application Script -->
+    <script src="app/app.js"></script>  
+    <!-- Services -->
+    <script src="common/common.services.js"></script>
+    <script src="common/petResource.js"></script>
+    <!-- Claim Controllers -->
+    <script src="app/claim/claimFormCtrl.js"></script>
+
+</body>
+</html>

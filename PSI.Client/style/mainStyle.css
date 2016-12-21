@@ -1,0 +1,43 @@
+﻿body {
+}
+
+.logo-img {
+    height: 25px;
+}
+
+.form-control {
+    width: auto;
+    display: inline-block;
+}
+
+.abs-center {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.abs-center.is-resp {
+    width: 50%;
+    height: 50%;
+    min-width: 310px;
+    max-width: 350px;
+}
+
+.mar-2em {
+    margin-bottom: 2em;
+}
+
+.drop-box {
+    background: #F8F8F8;
+    border: 2px solid #DDD;
+    width: 260px;
+    height: 80px;
+    text-align: center;
+    padding-top: 25px;
+}
+.dragover {
+    border: 2px dashed blue;
+}
