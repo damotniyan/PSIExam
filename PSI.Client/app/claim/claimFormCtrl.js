@@ -22,6 +22,7 @@
                 fileNames += '\n' + vm.files[i].name; 
             }
             alert('Thank you for submitting\n' + fileNames + '\n\nfor ' + vm.pickedPet);
+            vm.files = '';
         };
 
     }
