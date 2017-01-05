@@ -19,14 +19,14 @@
                      accept="image/*,application/*"
                      ngf-pattern="'image/*,application/*'">Drag and Drop or or click to upload</div>
                 <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
-                <ul>
-                    <li ng-repeat="f in vm.files" class="file-list">{{f.name}} {{f.$error}} {{f.$errorParam}}</li>
-                </ul>
+                <div>
+                    <label ng-repeat="f in vm.files" class="file-list">{{f.name}} {{f.$error}} {{f.$errorParam}}</label>
+                </div>
             </div>
 
             <div class="form-group">
                 <input type="submit" id="submit" value="Submit" class="btn btn-primary" />
-                <!--<a>Or save for laters</a>-->
+                <!--<a>Or save for later</a>-->
             </div>
         </form>
     </div>
